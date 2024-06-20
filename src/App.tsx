@@ -8,6 +8,7 @@ function App() {
 
             <Box>
                 <StyleBtn>Hello</StyleBtn>
+                <SuperBtn>SuperBtn</SuperBtn>
             </Box>
 
 
@@ -26,9 +27,16 @@ const StyleBtn = styled.button`
     font-size: 2rem;
     font-weight: bold;
 `
+
+const SuperBtn = styled(StyleBtn)`
+    background: aqua;
+    color: #363434;
+`
+
 const Box = styled.div`
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
 `
+
