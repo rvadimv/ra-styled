@@ -46,6 +46,11 @@ const Box = styled.div`
     ${StyleLink} {
         cursor: zoom-in;
     }
+    
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        
+    }
 `
 
 

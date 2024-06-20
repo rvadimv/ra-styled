@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {MyAnimation} from "./styles/animations/Animations";
 
 export const StyleBtn = styled.button`
     border: none;
@@ -21,4 +22,9 @@ export const StyleBtn = styled.button`
 export const SuperBtn = styled(StyleBtn)`
     background: aqua;
     color: #363434;
+    
+    &:hover{
+        animation: ${MyAnimation} 2s infinite ease-in-out;
+    }
+    
 `
