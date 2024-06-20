@@ -7,6 +7,8 @@ function App() {
         <div className="App">
 
             <Box>
+                <StyleBtn as={"a"} href={"#"}>Link</StyleBtn>
+                <StyleBtn as={StyleLink} href={"#"}>LinkComponenet</StyleBtn>
                 <StyleBtn>Hello</StyleBtn>
                 <SuperBtn>SuperBtn</SuperBtn>
             </Box>
@@ -28,6 +30,14 @@ const StyleBtn = styled.button`
     font-weight: bold;
 `
 
+const StyleLink = styled.a`
+    color: aquamarine;
+    font-size: 2rem;
+    font-weight: bold;
+    background: transparent;
+    padding: 0;
+`
+
 const SuperBtn = styled(StyleBtn)`
     background: aqua;
     color: #363434;
@@ -38,5 +48,6 @@ const Box = styled.div`
     height: 100vh;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 `
 
