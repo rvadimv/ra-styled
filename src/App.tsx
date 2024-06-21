@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import styled from "styled-components";
-import {StyleBtn, SuperBtn} from "./components/Button.styled";
+import {StyleBtn} from "./components/Button.styled";
 import {StyleLink} from "./components/Link.styled";
 import {Menu} from "./components/Menu.styled";
 
@@ -9,19 +9,11 @@ function App() {
     return (
         <div className="App">
 
-            <Menu>
-                <ul>
-                    <li><a href="">menu item 1</a></li>
-                    <li><a href="">menu item 2</a></li>
-                    <li><a href="">menu item 3</a></li>
-                </ul>
-            </Menu>
-
             <Box>
-                <StyleBtn as={"a"} href={"#"}>Link</StyleBtn>
-                <StyleBtn as={StyleLink} href={"#"}>LinkComponenet</StyleBtn>
-                <StyleBtn>Hello</StyleBtn>
-                <SuperBtn>SuperBtn</SuperBtn>
+                <StyleBtn color="red" fontSize="20px" >Hello</StyleBtn>
+                <StyleBtn color="green">Hello</StyleBtn>
+                <StyleBtn fontSize="30px">Hello</StyleBtn>
+
             </Box>
 
 
@@ -46,10 +38,10 @@ const Box = styled.div`
     ${StyleLink} {
         cursor: zoom-in;
     }
-    
+
     @media screen and (max-width: 800px) {
         flex-direction: column;
-        
+
     }
 `
 
