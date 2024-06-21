@@ -3,7 +3,7 @@ import './App.css';
 import styled from "styled-components";
 import {StyleBtn} from "./components/Button.styled";
 import {StyleLink} from "./components/Link.styled";
-import {Menu} from "./components/Menu.styled";
+
 
 function App() {
     return (
