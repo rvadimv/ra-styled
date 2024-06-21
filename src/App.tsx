@@ -10,9 +10,12 @@ function App() {
         <div className="App">
 
             <Box>
-                <StyleBtn color="red" fontSize="20px" >Hello</StyleBtn>
+                {/*<StyleBtn color="red" fontSize="20px" >Hello</StyleBtn>
                 <StyleBtn color="green">Hello</StyleBtn>
-                <StyleBtn fontSize="30px">Hello</StyleBtn>
+                <StyleBtn fontSize="30px">Hello</StyleBtn>*/}
+
+                <StyleBtn primary>Hello</StyleBtn>
+                <StyleBtn outlined>Hello</StyleBtn>
 
             </Box>
 

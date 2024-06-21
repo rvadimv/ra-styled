@@ -1,36 +1,50 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 type StyledBtnPropsType = {
     color?: string
     fontSize?: string
+    primary?: boolean
+    outlined?: boolean
 }
 
 export const StyleBtn = styled.button<StyledBtnPropsType>`
     border: none;
-    /*background-color: blueviolet;*/
     padding: 10px 20px;
-    border-radius: 5px;
-    color: aliceblue;
-    /*font-size: 2rem;*/
-    font-size: ${props => props.fontSize};
+    border-radius: 10px;
+    font-size: ${props => props.fontSize || "2rem"};
     font-weight: bold;
-    background-color: ${props => props.color || "blueviolet"};
+    background-color: transparent;
 
-    &:hover {
-        background-color: brown;
+
+    
+
+    ${props => props.outlined && css<StyledBtnPropsType>`
+        //outlined
+
+        border: 2px solid ${props => props.color || "blueviolet"};
+        color: ${props => props.color || "#474A47FF"};
+        background-color: transparent;
+
+        &:hover {
+            border-color: #c37fe4;
+            color: #c37fe4;
+            background-color: transparent;
+        }
+    `
     }
 
-    /*&:last-child {
-        background-color: darkslateblue;
-    }*/
+    ${props => props.primary && css<StyledBtnPropsType>`
+        //primary
+        background-color: ${props => props.color || "blueviolet"};
+        color: moccasin;
+
+        &:hover {
+            background-color: #c37fe4;
+        }
+    `}
+
+
 `
 
-/*export const SuperBtn = styled(StyleBtn)`
-    background: aqua;
-    color: #363434;
 
-    &:hover{
-        animation: ${MyAnimation} 2s infinite ease-in-out;
-    }
 
-`*/
