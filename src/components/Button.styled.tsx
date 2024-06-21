@@ -22,7 +22,7 @@ export const StyleBtn = styled.button<StyledBtnPropsType>`
         //outlined
 
         border: 2px solid ${props => props.color || "blueviolet"};
-        color: ${props => props.color || "#474A47FF"};
+        color: ${props => props.color || "blueviolet"};
         background-color: transparent;
 
         &:hover {
