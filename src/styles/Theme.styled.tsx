@@ -1,14 +1,14 @@
 export const myTheme = {
-    colors:{
+    colors: {
         primary: "gold",
         secondary: "lightgreen",
-        gray:{
+        gray: {
             dark: "#333333",
             light: "#b6b0b0",
         }
 
     },
-    media:{
+    media: {
         table: "screen and (max-width: 768px)",
         mobile: "screen and (min-width: 576px)",
     }

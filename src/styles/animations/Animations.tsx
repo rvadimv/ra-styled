@@ -1,10 +1,10 @@
 import {keyframes} from "styled-components";
 
 export const MyAnimation = keyframes`
-    from{
-       transform: rotate(0deg);
+    from {
+        transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(360deg);
     }
 `
