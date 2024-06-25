@@ -3,9 +3,9 @@ import HomePage from "./components/pages/home";
 
 function App() {
     return (
-        <div>
-            <HomePage />
-        </div>
+
+        <HomePage/>
+
     );
 }
 
