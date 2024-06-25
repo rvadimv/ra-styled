@@ -1,13 +1,9 @@
+import React from 'react';
+import { StyledImage } from './ImageContainer.styled';
+import RectangleImage from '../../Rectangle.png';  // Импорт изображения
 
-export const ImageContainer = () =>{
-    return(
-    <>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-    </>
-)
-}
+const ImageContainer: React.FC = () => {
+    return <StyledImage src={RectangleImage} alt="Rectangle" />;
+};
+
+export default ImageContainer;

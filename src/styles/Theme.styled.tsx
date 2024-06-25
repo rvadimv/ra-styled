@@ -5,7 +5,8 @@ export const myTheme = {
         gray: {
             dark: "#333333",
             light: "#b6b0b0",
-        }
+        },
+        white: "#ffffff"
 
     },
     media: {
