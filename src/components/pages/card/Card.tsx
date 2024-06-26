@@ -1,20 +1,19 @@
-import {ImgContainer} from "../../ImageContainer/ImageContainer.styled";
-import rectangleImg from "../../../Rectangle.png";
-import {StyleBtn} from "../../Button.styled";
+import {Button} from "../../Button.styled";
 import React from "react";
-import {WrapCard} from "./Card.styled";
+import {Card, CardContent, CardTitle} from "./Card.styled";
+import rectangleImg from "../../../assets/images/Rectangle.png";
+import {ImageCard} from "../../imageCard/Image.styled";
 
-export function WrapCards (){
-    return(
+export function CardWrap() {
+    return (
 
-        <WrapCard>
-            <ImgContainer>
-                <img src={rectangleImg} alt="Rectangle"/>
-            </ImgContainer>
-            <h1>Headline</h1>
-            <p>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</p>
-            <StyleBtn primary>See more</StyleBtn>
-            <StyleBtn outlined>Save</StyleBtn>
-        </WrapCard>
+        <Card>
+            <ImageCard src={rectangleImg} alt={"Rectangle"}/>
+            <CardTitle>Headline</CardTitle>
+            <CardContent>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in
+                venen.</CardContent>
+            <Button primary>See more</Button>
+            <Button outlined>Save</Button>
+        </Card>
     )
 }

@@ -1,13 +1,13 @@
 import styled, {css} from "styled-components";
 
-type StyledBtnPropsType = {
+type ButtonPropsType = {
     color?: string
     fontSize?: string
     primary?: boolean
     outlined?: boolean
 }
 
-export const StyleBtn = styled.button<StyledBtnPropsType>`
+export const Button = styled.button<ButtonPropsType>`
     width: 86px;
     height: 30px;
     border: none;
@@ -17,10 +17,14 @@ export const StyleBtn = styled.button<StyledBtnPropsType>`
     font-weight: bold;
     background-color: transparent;
 
+    cursor: pointer;
 
     
 
-    ${props => props.outlined && css<StyledBtnPropsType>`
+
+    
+
+    ${props => props.outlined && css<ButtonPropsType>`
         //outlined
 
         border: 2px solid ${props => props.color || "#4E71FE"};
@@ -35,7 +39,7 @@ export const StyleBtn = styled.button<StyledBtnPropsType>`
     `
     }
 
-    ${props => props.primary && css<StyledBtnPropsType>`
+    ${props => props.primary && css<ButtonPropsType>`
         //primary
         background-color: ${props => props.color || "#4E71FE"};
         color: #fff;
